@@ -1,0 +1,203 @@
+@font-face{
+	font-family: "NanumBrush";
+	src : url("font/NanumBrush.eot"); /* IE */
+	src:local('☺'), 
+	url("font/NanumBrush.woff") format("woff"), /* FF, CH */
+    url("font/NanumBrush.ttf") format("truetype"); /* FF, CH, SF, OP */
+}
+
+body{
+   background-color: #fafad2;
+   margin: 0;                           /* 바깥쪽 여백을 없앰 */
+   padding: 0;                          /* 안쪽 여백을 없앰 */
+   font-size: 0.75em;                   /* 글꼴 크기 */
+   line-height: 1.2em;                  /* 줄 간격 */
+   color: black;                         /* 글꼴 색상 */
+   font-family: NanumBrush, 'Trebuchet MS', Verdana, Geneva, sans_serif;
+}
+
+#wrap{   
+   /* 1024 × 768 해상도에 맞추어 웹 페이지 크기 지정*/   
+   width : 971px;
+   /* 백그라운드 이미지 적용 */
+   background-image: url(img/shadow.png);
+   background-repeat: repeat-y;
+   /* 중앙에 배치 */
+   margin: 0;
+   margin-right: auto; 
+   margin-left: auto;
+   text-align: left;               /*텍스트를 왼쪽에 배치*/
+   /* 페이지에 출력할 내용이 없어도 최소 높이는 780px */
+   min-height: 800px;
+}
+
+#title h1, #title h2{
+   display: none;                   /*헤드라인 숨김 */
+}
+ 
+#logo{                             /*  로고 이미지  */
+   float: left;                    /* 화면 왼쪽에 배치 */
+   width: 200px;
+   height: 95px;
+   margin: 50px 0 0 11px;
+   background-color: lightgrey;
+}
+
+#logo img{
+	float: center;
+	margin: -30 0 0 50;
+}
+
+/*리스트로 메인 메뉴 만들기*/
+nav#member_management{
+   float: left;
+   width: 750px;
+   height: 45px;
+   margin: 5px 0 0 0;
+   /*background-color: grey; 테스트용*/
+}
+
+nav#member_management ul{
+   list-style-type: none;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+nav#member_management ul li{
+   float: right;
+   margin: 0px 20px;
+}
+
+nav#member_management a{
+   text-decoration: none;
+   color: black;
+   display: block;
+   height: 20px;
+}
+
+nav#top_menu{
+   float: left;
+   width: 750px;
+   height: 95px;
+   margin: 0 0 0 0; /*margin: 50px 0 0 0;*/
+   background-color: lightgrey;
+}
+
+nav#top_menu ul{
+   list-style-type: none;
+   font-size: 25px;
+   font-weight: bold;
+}
+
+nav#top_menu ul li{
+   float: left;
+   margin: 15px 20px;
+}
+
+nav#top_menu a{
+   text-decoration: none;
+   color: black;
+   display: block;
+   height: 20px;
+}
+
+nav#top_menu a:HOVER{
+   color: black;
+}
+
+.clear{
+   clear: both;
+}
+
+/* 서브 메뉴  구성하기 */
+#sub_menu{
+	width: 238px;
+	float: left;
+	font-size: 1.7em;
+}
+
+#sub_menu ul{
+	list-style: none;
+	margin: 30px 0 0 10px; /*상 좌*/
+}
+
+#sub_menu a{
+	text-decoration: none;
+	color: #666;
+	display: block;
+	height: 15px;
+	width: 150px;
+	padding: 7px;
+	border-bottom: 1px dotted #999;
+	background-image: url(img/bullet.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#sub_menu a:HOVER {
+	color: black;
+	font-weight: bold;
+}
+
+/* 콘덴츠 설정하기 */
+#sub_section {	
+	float: right;
+	width: 650px;
+	padding-right: 30px;
+	font-size: 20px;
+	min-height: 780px;
+}
+
+
+
+#sub_section h1{
+	padding-left: 0px;
+	padding-top: 25px;
+	font-size: 30px;
+	color: black;
+}
+
+@font-face{
+	font-family: ROCK;
+	src: url('font/ROCK.TTF');
+}
+
+
+#sub_section article p{
+	font-family: ROCK, 'Trebuchet MS', Veridana, Geneva, sans_serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+figure.history{
+	float: right;
+	margin: 5px 5px 5px 15px;	
+}
+
+/* 푸터 */
+footer{
+	margin: 50px 0 0 0;
+	height: 80px;
+	background-position: 40px center;
+}
+
+footer hr{
+	width: 900px;
+	margin: 0 0 0 10px;
+}
+
+footer #copyright{
+	font-family: NanumBrush, 'Trebuchet MS',Veridana, Geneva, sans_serif;
+	font-size: 18px;
+	width: 950px;
+	height: 20px;
+	margin: 20px 0 0 11px;
+	float: left;
+	background-color: lightgrey;
+}
+
+
+
+
+/* 서브메뉴 스타일 */
+
